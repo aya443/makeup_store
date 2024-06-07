@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store de Maquillage</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo du Store de Maquillage" class="logo">
+        <h1>Store de Maquillage</h1>
+        <button id="toggleCart">Afficher/Cacher Panier</button>
+    </header>
+    <div id="cart" class="hidden">
+        <h2>Panier</h2>
+        <ul id="cartItems"></ul>
+        <p>Total: <span id="totalPrice">0</span>€</p>
+        <button id="emptyCart">Vider le Panier</button>
+    </div>
+    <main>
+        <div class="filters">
+            <h3>Filtres</h3>
+            <label><input type="checkbox" class="filter" value="rouge"> Rouge à lèvres</label>
+            <label><input type="checkbox" class="filter" value="fond"> Fond de teint</label>
+            <label><input type="checkbox" class="filter" value="poudre"> Poudre</label>
+        </div>
+        <div class="products">
+            <!-- Les produits seront ajoutés ici par JavaScript -->
+        </div>
+    </main>
+</body>
+</html>
